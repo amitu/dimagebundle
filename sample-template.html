@@ -1,0 +1,36 @@
+{% load imgbundle %}
+{% imgbundle %}
+<html><head><title>django image bundle demo</title>
+<style type="text/css">
+div#wrong img
+{
+    padding: 10px 10px;
+    border: 1px solid red;
+}
+#right
+{
+    padding: 10px 10px;
+    border: 1px solid red;
+    float: left;
+}
+</style>
+</head><body>
+<p>This is the first image:</p>
+{% img src="/static3/winOpen.gif" %}
+<p>This is image 2:</p>
+{% img src="/static2/dolltoo.JPG" %}
+<p>This is image 3:</p>
+{% img src="/static2/google.gif" %}
+<p>4</p>
+{% img src="/static2/P1020730.JPG" height="400px" %}
+<p>this one got padding</p>
+<div id="wrong">
+{% img src="/static2/P1020730.JPG" width="300px" %}
+</div>
+<p>this one got padding right</p>
+<div id="right">
+{% img src="/static2/P1020730.JPG" width="300px" %}
+</div>
+<p style="clear: both">blah blah</p>
+</body></html>
+{% endimgbundle %}

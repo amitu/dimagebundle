@@ -1,0 +1,5 @@
+For minimizing number of http requests done by browser, if there are a lot of
+images on a page, multiple image can be clubbed into one.
+
+This tool lets you do it for django projects.
+
